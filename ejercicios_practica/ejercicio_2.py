@@ -26,12 +26,34 @@ texto_2 = str(input('Ingrese la segunda palabra:\n'))
 # - Si texto_1 es mayor (alfabéticamente) a texto_2, 
 #   almacenar 1 en res_1
 # - De lo contrario, almacenar 2 en res_1
+res_1=0
+
+if texto_1>texto_2:
+    res_1+=1
+    print(f"el texto 1 es mayor que el texto2 res_1:{res_1}")
+else:
+    res_1+=2
+    print(f"el texto 1 en menor que el texto 2 res_1: {res_1}")
 
 
 # Imprimir en pantalla la variable res_1
 
 # Compare cual de las dos palabras tiene mayor
 # cantidad de letras
+
+res_2=0
+
+if len(texto_1)>len(texto_2):
+    res_2+=1
+elif len(texto_1)<len(texto_2):
+    res_2+=2    
+elif len(texto_1)==len(texto_2):
+    res_2+=3
+else:
+    print("no cumple ninguna de las anteriores" )
+
+print(f" cunmple condicion:{res_2}")
+
 # Utilice if, elif y else
 # - Si texto_1 tiene más letras, almacenar 1 en res_2
 # - Si texto_2 tiene más letras, almacenar 2 en res_2

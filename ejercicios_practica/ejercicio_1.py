@@ -26,6 +26,12 @@ numero_2 = int(input('Ingrese el segundo número:\n'))
 # - Si numero_1 es mayor a numero_2, almacenar 1 en res_1
 # - De lo contrario, almacenar 2 en res_1
 res_1 = 0
+if numero_1 > numero_2:
+    res_1+=1 
+    print(f"el numero 1 es mayor que el numero 2 res_1: {res_1}")
+else:
+    res_1+=2  
+    print(f"el numero 1 e menor que el numero 2 res_1: {res_1}")   
 
 # Imprimir en pantalla la variable res_1
 
@@ -35,6 +41,16 @@ res_1 = 0
 # - Si numero_1 es negativo, almacenar 2 en res_2
 # - Si numero_1 es cero, almacenar 3 en res_2
 res_2 = 0
+if numero_1 > 0:
+    res_2+=1
+    print(f"el numero es positivo res_2:{res_2}")
+elif numero_1<0:
+    res_2+=2
+    print(f"elnumero es negativo res_2: {res_2}")
+elif numero_1 == 0:
+    res_2+=3
+    print(f"el numero es cero res_2: {res_2}")
+    
 
 # Imprimir en pantalla la variable res_2
 
@@ -44,6 +60,13 @@ res_2 = 0
 # - Si se cumple la condición, almacenar 1 en res_3
 # - De lo contrario, almacenar 2 en res_3
 res_3 = 0
+if numero_1 > 0 and numero_1 < 100:
+    res_3+=1
+    print(f"el numero es mayor que cero y menor que 100 res_3: {res_3}")
+else:
+    res_3+=2
+    print(f"no cumple la condicion res_3: {res_3}")
+
 
 # Imprimir en pantalla la variable res_3
 

@@ -14,7 +14,7 @@
 # Objetico
 # Verificar la calificación de un estudiante según su
 # puntaje en un examen
-puntaje = 70
+#puntaje = 70
 
 # Alumno:
 # Deberá crear una serie de considiconales
@@ -22,7 +22,19 @@ puntaje = 70
 # la variable nota la nota del alumno según
 # las siguientes condiciones:
 
-nota = ""
+puntaje = int(input('Ingrese la nota:\n'))
+
+if puntaje >=90:
+    nota="A"
+elif puntaje >=80 and puntaje < 90:
+    nota="B"
+elif puntaje >=70 and puntaje <80:
+    nota="C"
+elif puntaje >=60 and puntaje <70:     
+    nota="D"
+elif puntaje < 60:
+    nota="F" 
+print("su nota es:",nota )       
 
 # Si el puntaje es mayor igual a 90 --> nota = "A"
 # Si el puntaje es mayor igual a 80 --> nota = "B"

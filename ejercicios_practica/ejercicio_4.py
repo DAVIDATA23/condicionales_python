@@ -21,6 +21,36 @@ cantidad_numeros_positivos = 0
 # numero_2
 # numero_3
 
+numero_1 = int (input("ingrese numero 1: \n"))
+numero_2 = int (input("ingrese numero 2: \n"))
+numero_3 = int (input("ingrese numero 3: \n"))
+
+print("numero 1:",numero_1)
+print("numero 2:",numero_2)
+print("numero 3:",numero_3)
+
+if numero_1 > 0:
+    cantidad_numeros_positivos +=1
+else: 
+    print('el numero es menor que cero')
+
+if numero_2 > 0:
+    cantidad_numeros_positivos +=1
+else: 
+    print('el numero es menor que cero')
+
+if numero_3 > 0:
+    cantidad_numeros_positivos +=1   
+else: 
+    print('el numero es menor que cero')
+ 
+print("cantidad de nuemros positivos_:",cantidad_numeros_positivos)
+
+
+
+
+
+
 # Deberá realizar un tres condicionales separados,
 # en cada condicional deberá averiguar si cada número
 # es mayor a cero.
